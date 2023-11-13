@@ -45,6 +45,9 @@ public class ComHerokuapp {
         // NOT WORKNIG - WebElement loginLink2 = driver.findElement(By.linkText(" Login")); // hover to login button
         // NOT WORKNIG - loginLink2.click(); // click on link
 
+        WebElement loginLink2 = driver.findElement(By.xpath("//*[@id=\"login\"]/button/i")); // hover to login button
+        loginLink2.click(); // click on link
+
         System.out.println(driver.getCurrentUrl()); // print current url
 
         driver.navigate().refresh(); // refresh url
