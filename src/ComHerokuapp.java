@@ -10,7 +10,7 @@ import java.time.Duration;
 public class ComHerokuapp {
 
 
-    static String browser = "chrome"; // choose browser
+    static String browser = "firefox"; // choose browser
     static WebDriver driver; // declare globally
 
     public static void main(String[] args) {
@@ -39,11 +39,11 @@ public class ComHerokuapp {
         WebElement password = driver.findElement(By.id("password"));       //find password field and enter password by ID
         password.sendKeys("SuperSecretPassword!");    // type into box, action
 
-        WebElement loginLink = driver.findElement(By.className("fa fa-2x fa-sign-in")); // hover to login button
-        loginLink.click(); // click on link
+       // NOT WORKNIG -  WebElement loginLink = driver.findElement(By.className("fa fa-2x fa-sign-in")); // hover to login button
+        // NOT WORKNIG - loginLink.click(); // click on link
 
-        WebElement loginLink2 = driver.findElement(By.linkText(" Login")); // hover to login button
-        loginLink2.click(); // click on link
+        // NOT WORKNIG - WebElement loginLink2 = driver.findElement(By.linkText(" Login")); // hover to login button
+        // NOT WORKNIG - loginLink2.click(); // click on link
 
         System.out.println(driver.getCurrentUrl()); // print current url
 
